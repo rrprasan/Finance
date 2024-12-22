@@ -1,2 +1,2 @@
 # Finance
-Technical implementations of various use cases in finance and economics. 
+# Technical implementations of various use cases in finance and economics. 
