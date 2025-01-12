@@ -1,1 +1,1 @@
-# Press Release Abalysis Using Snowflake Cortex AI
+# Press Release Analysis Using Snowflake Cortex AI
