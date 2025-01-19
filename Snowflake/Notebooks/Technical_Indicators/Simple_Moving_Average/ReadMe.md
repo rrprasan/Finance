@@ -21,3 +21,5 @@ Simple Moving Average is a powerful statistical tool that calculates the average
 - Inventory management
 
 In equities, the [simple moving average](https://www.investopedia.com/terms/s/sma.asp) (SMA) smooths out price data by calculating the average price over a specific time period. It's a powerful tool that helps identify trends and reduce noise in data.   
+
+#### Author: [Prasanna Rajagopal](https://www.linkedin.com/in/prasannarajagopal/)
