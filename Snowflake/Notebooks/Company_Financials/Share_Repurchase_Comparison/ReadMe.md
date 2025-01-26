@@ -8,6 +8,7 @@ Rotates a table by turning the unique values from one column in the input expres
 The operator supports the built-in aggregate functions AVG, COUNT, MAX, MIN, and SUM.
 
 PIVOT can be used to transform a narrow table (for example, empid, month, sales) into a wider table (for example, empid, jan_sales, feb_sales, mar_sales).
+(Source: Snowflake)
 
 
 ## The PIVOT function is particularly valuable when:
