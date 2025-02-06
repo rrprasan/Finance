@@ -21,27 +21,27 @@
 ### 5. Find the Center of the Envelope for Proper Positioning on the Map Using [ST_CENTROID](https://docs.snowflake.com/en/sql-reference/functions/st_centroid)
 ### 6. Layer the Envelope & Bronx Small Business GEOGRAPHY Points on the Map Using PyDeck.  
 
-Follow the following steps to import the NYC Small Business CSV Data into Snowflake.  
+Please follow the steps I've included to import the NYC Small Business CSV Data into Snowflake.  
 
-Step 1: Click on the "+" Icon in Snowsight -> Select "Table" -> Select "From File"
+### Step 1: Click on the "+" Icon in Snowsight -> Select "Table" -> Select "From File"
 
 <img width="380" alt="Screenshot 2025-02-06 at 04 55 13" src="https://github.com/user-attachments/assets/bb667461-224c-4a2c-b945-2e05974f7657" />
 
-Step 2: You will see the "Load Data Into File" Pop-up Window.
+### Step 2: You will see the "Load Data Into File" Pop-up Window.
 
 <img width="752" alt="Screenshot 2025-02-06 at 04 55 29" src="https://github.com/user-attachments/assets/0b1556a4-ce8c-4535-966f-49f647842b75" />
 
-Step 3: Drop the "SBS_Certified_Business_List_20250206.csv" file into the "Load Data Into File" Window. Select your database and schema and name your table as NYC_SMALL_BUSINESS_TBL 
+### Step 3: Drop the "SBS_Certified_Business_List_20250206.csv" file into the "Load Data Into File" Window. Select your database and schema and name your table as NYC_SMALL_BUSINESS_TBL 
 <img width="751" alt="Screenshot 2025-02-06 at 04 56 13" src="https://github.com/user-attachments/assets/f7ceea19-daab-483d-a5ba-07f6ab1f8769" />
 
-Step 4: Press "Next" on the "Load Data Into File" Pop-up Window. 
+### Step 4: Press "Next" on the "Load Data Into File" Pop-up Window. 
 <img width="1303" alt="Screenshot 2025-02-06 at 04 56 44" src="https://github.com/user-attachments/assets/eb821586-a5e9-47ec-882e-1c1f493afa30" />
-Step 5: You will find that there are 4 errors in the Column Names. The Column Names created by NYC have Spaces in them. You scroll down to the columns with the errors or have Snowflake auto-fix the error. I fixed the errors by replacing the spaces with underscores and removing any "(" characters in the column name.     
+### Step 5: You will find that there are 4 errors in the Column Names. The Column Names created by NYC have Spaces in them. You scroll down to the columns with the errors or have Snowflake auto-fix the error. I fixed the errors by replacing the spaces with underscores and removing any "(" characters in the column name.     
 <img width="1299" alt="Screenshot 2025-02-06 at 04 57 27" src="https://github.com/user-attachments/assets/7ea2c2da-17ab-405f-89a7-084120d8ae2e" />
 ** IMPORTANT NOTE **
-Step 6: Please ensure you change the LATITUDE and LONGITUDE Data Types from NUMBER to FLOAT. You can then press "Load" to load the data into the table.     
+### Step 6: Please ensure you change the LATITUDE and LONGITUDE Data Types from NUMBER to FLOAT. You can then press "Load" to load the data into the table.     
 <img width="1300" alt="Screenshot 2025-02-06 at 04 58 25" src="https://github.com/user-attachments/assets/ef1df86d-7cb9-4d7d-a079-935183c7a87c" />
-Your NYC_SMALL_BUSINESS_TBL should show FLOAT as Data Type for LATITUDE and LONGITUDE Columns:
+### Your NYC_SMALL_BUSINESS_TBL should show FLOAT as Data Type for LATITUDE and LONGITUDE Columns:
 
 <img width="621" alt="Screenshot 2025-02-06 at 07 28 34" src="https://github.com/user-attachments/assets/d2d8eab1-835e-42a2-ba1d-184c8a667ca9" />
 
