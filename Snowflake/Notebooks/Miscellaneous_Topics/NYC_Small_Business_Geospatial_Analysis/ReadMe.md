@@ -1,4 +1,4 @@
-# Visualizing New York City Small Business on a Map Using Snowflake Notebook
+# Visualizing New York City Small Businesses on a Map Using Snowflake Notebook
 ## You will learn the following from this Snowflake Notebook:
 ## Snowflake provides the following data types for geospatial data:
 
