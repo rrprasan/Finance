@@ -23,4 +23,7 @@
 
 Follow the following steps to import the NYC Small Business CSV Data into Snowflake.  
 
+<img width="380" alt="Screenshot 2025-02-06 at 04 55 13" src="https://github.com/user-attachments/assets/bb667461-224c-4a2c-b945-2e05974f7657" />
+
+
 
