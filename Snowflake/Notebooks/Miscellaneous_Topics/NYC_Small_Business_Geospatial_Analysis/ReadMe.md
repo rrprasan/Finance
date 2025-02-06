@@ -41,6 +41,7 @@ Please follow the steps I've included to import the NYC Small Business CSV Data 
 ** IMPORTANT NOTE **
 ### Step 6: Please ensure you change the LATITUDE and LONGITUDE Data Types from NUMBER to FLOAT. You can then press "Load" to load the data into the table.     
 <img width="1300" alt="Screenshot 2025-02-06 at 04 58 25" src="https://github.com/user-attachments/assets/ef1df86d-7cb9-4d7d-a079-935183c7a87c" />
+
 ### Your NYC_SMALL_BUSINESS_TBL should show FLOAT as Data Type for LATITUDE and LONGITUDE Columns:
 
 <img width="621" alt="Screenshot 2025-02-06 at 07 28 34" src="https://github.com/user-attachments/assets/d2d8eab1-835e-42a2-ba1d-184c8a667ca9" />
