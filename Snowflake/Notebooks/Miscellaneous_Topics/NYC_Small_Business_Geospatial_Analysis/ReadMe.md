@@ -36,9 +36,11 @@ Please follow the steps I've included to import the NYC Small Business CSV Data 
 
 ### Step 4: Press "Next" on the "Load Data Into File" Pop-up Window. 
 <img width="1303" alt="Screenshot 2025-02-06 at 04 56 44" src="https://github.com/user-attachments/assets/eb821586-a5e9-47ec-882e-1c1f493afa30" />
+
 ### Step 5: You will find that there are 4 errors in the Column Names. The Column Names created by NYC have Spaces in them. You scroll down to the columns with the errors or have Snowflake auto-fix the error. I fixed the errors by replacing the spaces with underscores and removing any "(" characters in the column name.     
 <img width="1299" alt="Screenshot 2025-02-06 at 04 57 27" src="https://github.com/user-attachments/assets/7ea2c2da-17ab-405f-89a7-084120d8ae2e" />
 ** IMPORTANT NOTE **
+
 ### Step 6: Please ensure you change the LATITUDE and LONGITUDE Data Types from NUMBER to FLOAT. You can then press "Load" to load the data into the table.     
 <img width="1300" alt="Screenshot 2025-02-06 at 04 58 25" src="https://github.com/user-attachments/assets/ef1df86d-7cb9-4d7d-a079-935183c7a87c" />
 
