@@ -5,6 +5,10 @@
 - [LEAST](https://docs.snowflake.com/en/sql-reference/functions/least)
 - [GREATEST_IGNORE_NULLS](https://docs.snowflake.com/en/sql-reference/functions/greatest_ignore_nulls)
 - [LEAST_IGNORE_NULLS](https://docs.snowflake.com/en/sql-reference/functions/least_ignore_nulls)
-- [FILTER](https://docs.snowflake.com/en/sql-reference/functions/filter)
+- Higher-Order Functions
+    - [FILTER](https://docs.snowflake.com/en/sql-reference/functions/filter)
+    - [TRANSFORM](https://docs.snowflake.com/en/sql-reference/functions/transform)
+    - [REDUCE](https://docs.snowflake.com/en/sql-reference/functions/reduce)
 - [COLLATION](https://docs.snowflake.com/en/sql-reference/functions/collation)
+#### Last Updated: Feb 2025. 
 #### Last Updated: Feb 2025. 
