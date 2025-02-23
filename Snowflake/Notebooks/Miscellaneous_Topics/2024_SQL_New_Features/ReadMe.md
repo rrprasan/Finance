@@ -11,4 +11,3 @@
     - [REDUCE](https://docs.snowflake.com/en/sql-reference/functions/reduce)
 - [COLLATION](https://docs.snowflake.com/en/sql-reference/functions/collation)
 #### Last Updated: Feb 2025. 
-#### Last Updated: Feb 2025. 
