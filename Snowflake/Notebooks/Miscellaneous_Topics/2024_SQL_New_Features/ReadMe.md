@@ -11,4 +11,4 @@
     - [REDUCE](https://docs.snowflake.com/en/sql-reference/functions/reduce)
 - [COLLATION](https://docs.snowflake.com/en/sql-reference/functions/collation)
 - [SEARCH](https://docs.snowflake.com/en/user-guide/querying-with-search-functions)
-#### Last Updated: Feb 2025. 
+#### Last Updated: Mar 2025. 
