@@ -1,4 +1,5 @@
-## Follow the following steps to create the semantic model file for Snowflake Cortex Analyst
+## Step 1: Complete the Steps Outlined in the [Notebook]()
+## Step 2: Follow the following steps to create the semantic model file for Snowflake Cortex Analyst
 
 ## Step 1:
 <img width="1095" alt="Screenshot 2025-03-20 at 07 33 35" src="https://github.com/user-attachments/assets/2424141a-b9c3-4b77-91c9-c956bb7b7a12" />
