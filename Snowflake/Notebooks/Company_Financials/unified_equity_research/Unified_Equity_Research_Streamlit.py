@@ -1,3 +1,7 @@
+#
+# The original source for this code is the Snowflake Cortex Agent Quick-start Guide
+# https://quickstarts.snowflake.com/guide/getting_started_with_cortex_agents/index.html?index=../..index#0
+# 
 import streamlit as st
 import json
 import _snowflake
