@@ -1,4 +1,4 @@
-## Step 1: Complete the Steps Outlined in the [Notebook]()
+## Step 1: Complete the Steps Outlined in the [Notebook](https://github.com/rrprasan/Finance/blob/main/Snowflake/Notebooks/Company_Financials/unified_equity_research/Equity_Research_Cortex_Agent_Demo.ipynb)
 ## Step 2: Follow the following steps to create the semantic model file for Snowflake Cortex Analyst
 
 ## Step 1:
