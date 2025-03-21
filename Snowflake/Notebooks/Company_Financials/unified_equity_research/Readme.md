@@ -1,5 +1,7 @@
 ## Step 1: Complete the Steps Outlined in the [Notebook](https://github.com/rrprasan/Finance/blob/main/Snowflake/Notebooks/Company_Financials/unified_equity_research/Equity_Research_Cortex_Agent_Demo.ipynb)
-## Step 2: Follow the following steps to create the semantic model file for Snowflake Cortex Analyst
+## Step 2: Two Options to Get Access to a Semantic Model YAML File
+## - Option 1: Copy the [YAML File from Github](https://github.com/rrprasan/Finance/blob/main/Snowflake/Notebooks/Company_Financials/unified_equity_research/ohlc_data_semantic_model.yaml) to your Snowflake YAML_STAGE. 
+## - Option 2: Create a Semantic Model YAML file from scratch by following the steps below.  
 
 ## Step 1:
 <img width="1095" alt="Screenshot 2025-03-20 at 07 33 35" src="https://github.com/user-attachments/assets/2424141a-b9c3-4b77-91c9-c956bb7b7a12" />
