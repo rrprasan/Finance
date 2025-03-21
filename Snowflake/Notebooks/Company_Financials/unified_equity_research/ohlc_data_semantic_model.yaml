@@ -1,0 +1,102 @@
+name: ohlc_data_semantic_model
+tables:
+  - name: COMPANY_STOCK_PRICES_OHLC_VW
+    base_table:
+      database: DEMODB
+      schema: EQUITY_RESEARCH
+      table: COMPANY_STOCK_PRICES_OHLC_VW
+    dimensions:
+      - name: TICKER_SYMBOL
+        expr: TICKER_SYMBOL
+        data_type: VARCHAR(16777216)
+        description: The ticker symbol of the company whose stock price is being tracked.
+        sample_values:
+          - CPB
+          - SJM
+          - VDE
+        synonyms:
+          - stock_symbol
+          - company_ticker
+          - ticker_id
+          - stock_id
+          - company_code
+          - security_id
+    time_dimensions:
+      - name: OHLC_DATE
+        expr: OHLC_DATE
+        data_type: DATE
+        description: Date of the stock price data, representing the opening, high, low, and closing prices, as well as the trading volume, for a specific company.
+        sample_values:
+          - '2025-02-03'
+          - '2025-02-04'
+          - '2025-02-05'
+        synonyms:
+          - date
+          - trading_date
+          - stock_date
+          - market_date
+          - calendar_date
+          - business_date
+          - record_date
+    facts:
+      - name: OPEN_PRICE
+        expr: OPEN_PRICE
+        data_type: NUMBER(14,4)
+        description: The opening price of the company's stock at the start of the trading day.
+        sample_values:
+          - '38.6300'
+          - '37.8920'
+          - '37.3700'
+        synonyms:
+          - opening_price
+          - initial_price
+          - starting_price
+          - morning_price
+          - first_price
+      - name: HIGH_PRICE
+        expr: HIGH_PRICE
+        data_type: NUMBER(14,4)
+        description: The highest price of the company's stock on a given trading day.
+        sample_values:
+          - '38.9300'
+          - '38.0000'
+          - '39.4300'
+        synonyms:
+          - peak_price
+          - highest_price
+          - max_price
+          - top_price
+          - highest_value
+          - maximum_price
+          - upper_price
+      - name: LOW_PRICE
+        expr: LOW_PRICE
+        data_type: NUMBER(14,4)
+        description: The lowest price at which the company's stock traded during the given time period.
+        sample_values:
+          - '38.0100'
+          - '37.1600'
+          - '37.0100'
+        synonyms:
+          - min_price
+          - lowest_price
+          - bottom_price
+          - minimum_price
+          - cheapest_price
+          - rock_bottom_price
+          - lowest_value
+          - minimum_value
+      - name: CLOSE_PRICE
+        expr: CLOSE_PRICE
+        data_type: NUMBER(14,4)
+        description: The closing price of the company's stock at the end of the trading day.
+        sample_values:
+          - '38.1300'
+          - '37.4500'
+          - '37.2900'
+        synonyms:
+          - final_price
+          - closing_value
+          - end_of_day_price
+          - settlement_price
+          - market_close_price
