@@ -24,6 +24,7 @@
 
 ## Architecture Overview
 The core of this project is a multi-step data pipeline where each transformation layer is a Dynamic Table that automatically refreshes as new data arrives in the upstream source.
+<img width="661" height="62" alt="Screenshot 2025-08-16 at 20 39 31" src="https://github.com/user-attachments/assets/04f8bf4a-ff85-4611-b47a-ae15fba2006d" />
 
 - ### Ingestion Table:
   - A standard table (DEMO_MARKET_DATA_JSON_INGESTION_TTBL) where raw, semi-structured JSON data lands.
