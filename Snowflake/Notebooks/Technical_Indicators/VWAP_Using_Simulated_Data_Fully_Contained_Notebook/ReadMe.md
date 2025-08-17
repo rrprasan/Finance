@@ -25,13 +25,17 @@
 ## Architecture Overview
 The core of this project is a multi-step data pipeline where each transformation layer is a Dynamic Table that automatically refreshes as new data arrives in the upstream source.
 
-- ### Ingestion Table: A standard table (DEMO_MARKET_DATA_JSON...) where raw, semi-structured JSON data lands.
+- ### Ingestion Table:
+  - A standard table (DEMO_MARKET_DATA_JSON_INGESTION_TTBL) where raw, semi-structured JSON data lands.
 
-- ### Normalization DT: The first Dynamic Table (DEMO_TRADE_RECORDS_NORMALIZED_DTBL) reads from the ingestion table, flattens the JSON, and produces clean, structured trade records.
+- ### Normalization DT:
+  - The first Dynamic Table (DEMO_TRADE_RECORDS_NORMALIZED_DTBL) reads from the ingestion table, flattens the JSON, and produces clean, structured trade records.
 
-- ### Time Slice DT: The second Dynamic Table (DEMO_VWAP_20MIN_TIME_SLICES_DTBL) aggregates the normalized records into 20-minute windows to calculate an intermediate VWAP.
+- ### Time Slice DT:
+  - The second Dynamic Table (DEMO_VWAP_20MIN_TIME_SLICES_DTBL) aggregates the normalized records into 20-minute windows to calculate an intermediate VWAP.
 
-- ### Cumulative Analysis DT: The final Dynamic Table (DEMO_VWAP_CUMULATIVE_ANALYSIS_DTBL) reads from the time-slice table and uses window functions to calculate the final, cumulative VWAP.
+- ### Cumulative Analysis DT:
+  - The final Dynamic Table (DEMO_VWAP_CUMULATIVE_ANALYSIS_DTBL) reads from the time-slice table and uses window functions to calculate the final, cumulative VWAP.
 
 ## Technologies Used
 ### Snowflake:
