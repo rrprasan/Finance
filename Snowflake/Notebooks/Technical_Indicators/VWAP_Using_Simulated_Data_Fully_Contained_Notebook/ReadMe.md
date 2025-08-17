@@ -4,17 +4,23 @@
 - The primary goal is to provide a self-contained learning environment for understanding how to replace complex, traditional ETL with a simple, declarative, and reliable data pipeline in Snowflake.
 
 ## Key Features
-- ### Declarative Data Pipeline: Replaces complex Streams and Tasks with simple, easy-to-manage Dynamic Tables.
+- ### Declarative Data Pipeline:
+  - Replaces complex Streams and Tasks with simple, easy-to-manage Dynamic Tables.
 
-- ### Realistic Data Simulation: Includes a Python Stored Procedure that uses the Geometric Brownian Motion (GBM) financial model to generate a high-fidelity historical dataset, making the demo fully self-contained.
+- ### Realistic Data Simulation:
+  - Includes a Python Stored Procedure that uses the Geometric Brownian Motion (GBM) financial model to generate a high-fidelity historical dataset, making the demo fully self-contained.
 
-- ### Automated Orchestration: Snowflake automatically manages the entire dependency graph (DAG) and refresh schedule for the pipeline.
+- ### Automated Orchestration:
+  - Snowflake automatically manages the entire dependency graph (DAG) and refresh schedule for the pipeline.
 
-- ### Efficient JSON Processing: Demonstrates how to land raw JSON and efficiently flatten it for analysis using LATERAL FLATTEN.
+- ### Efficient JSON Processing:
+  - Demonstrates how to land raw JSON and efficiently flatten it for analysis using LATERAL FLATTEN.
 
-- ### Advanced SQL Analytics: Uses time-series functions (TIME_SLICE) and window functions to perform complex aggregations for VWAP calculation.
+- ### Advanced SQL Analytics:
+  - Uses time-series functions (TIME_SLICE) and window functions to perform complex aggregations for VWAP calculation.
 
-- ### Interactive Visualization: Includes a ready-to-run Streamlit dashboard for visual analysis of the results.
+- ### Interactive Visualization:
+  - Includes a ready-to-run Streamlit dashboard for visual analysis of the results.
 
 ## Architecture Overview
 The core of this project is a multi-step data pipeline where each transformation layer is a Dynamic Table that automatically refreshes as new data arrives in the upstream source.
