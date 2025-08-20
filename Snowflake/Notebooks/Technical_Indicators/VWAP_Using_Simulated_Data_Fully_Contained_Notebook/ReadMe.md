@@ -2,6 +2,17 @@
 - This project demonstrates how to build a powerful, automated data pipeline for calculating stock technical indicators using Snowflake Dynamic Tables. The demo focuses on calculating the Volume Weighted Average Price (VWAP) for AAPL, showcasing an end-to-end workflow from raw data ingestion to interactive visualization.
 
 - The primary goal is to provide a self-contained learning environment for understanding how to replace complex, traditional ETL with a simple, declarative, and reliable data pipeline in Snowflake.
+  
+## Pre-requisites
+- Please ensure the following packages are included in your Snowflake Notebook:
+- dependencies:
+  - plotly=6.0.1
+  - snowflake=1.6.0
+  - snowflake-snowpark-python=1.35.0
+  - snowflake.core=1.6.0
+
+<img width="334" height="323" alt="Screenshot 2025-08-20 at 07 35 00" src="https://github.com/user-attachments/assets/73a14711-1b4a-4f66-985c-5257db61f145" />
+
 
 ## Key Features
 - ### Declarative Data Pipeline:
