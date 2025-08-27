@@ -73,8 +73,8 @@ Include proper error handling and status updates for each step.
 The app is failing to find the Snowflake connections.toml file. The file exists but uses the old TOML format:
 
 [DEMO_PRAJAGOPAL_PUBLIC]
-account = "<Your Snowflake Account>"
-user = "<Your Snowflake Username>"
+account = "IHB90733"
+user = "prajagopal"
 # ... other settings
 
 But the app expects the new format with connections.NAME. Fix the connection loading logic to handle both old format (NAME) and new format (connections.NAME) automatically. Also improve error messages to show available connections if the specified one is not found.
@@ -311,6 +311,74 @@ Add production-ready deployment capabilities:
 
 The goal is to make this a professional, production-ready project that can be deployed anywhere.
 ```
+
+---
+
+## 📋 Required IAM Configurations
+
+### **Sample IAM Policy JSON**
+The IAM policy that gets created for S3 bucket access should follow this structure:
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject",
+                "s3:GetObject", 
+                "s3:GetObjectVersion",
+                "s3:DeleteObject",
+                "s3:DeleteObjectVersion"
+            ],
+            "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetBucketLocation"
+            ],
+            "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME",
+            "Condition": {
+                "StringLike": {
+                    "s3:prefix": ["*"]
+                }
+            }
+        }
+    ]
+}
+```
+
+### **Sample IAM Role Trusted Relationship JSON**
+The IAM role trust policy gets updated with Snowflake credentials and should follow this structure:
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::123456789012:user/snowflake-user"
+            },
+            "Action": "sts:AssumeRole",
+            "Condition": {
+                "StringEquals": {
+                    "sts:ExternalId": "ACCOUNT123_SFCRole=1_ExampleExternalId12345="
+                }
+            }
+        }
+    ]
+}
+```
+
+**Important Notes:**
+- The `Principal.AWS` value comes from Snowflake's `STORAGE_AWS_IAM_USER_ARN`
+- The `sts:ExternalId` value comes from Snowflake's `STORAGE_AWS_EXTERNAL_ID`
+- These values are automatically extracted from the `DESC EXTERNAL VOLUME` command
+- The app handles the initial trust policy creation with a placeholder and updates it automatically
 
 ---
 
