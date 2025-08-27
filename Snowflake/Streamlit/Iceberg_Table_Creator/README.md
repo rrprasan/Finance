@@ -37,7 +37,7 @@ This app completely automates the complex process of setting up Iceberg tables o
 
 ### **1. Clone & Install**
 ```bash
-git clone https://github.com/your-username/iceberg-table-creator.git
+git clone https://github.com/your-username/iceberg-table-creator.git](https://github.com/rrprasan/Finance/tree/main/Snowflake/Streamlit/Iceberg_Table_Creator.git
 cd iceberg-table-creator
 chmod +x install.sh
 ./install.sh
