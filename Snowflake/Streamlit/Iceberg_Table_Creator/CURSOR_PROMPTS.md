@@ -73,8 +73,8 @@ Include proper error handling and status updates for each step.
 The app is failing to find the Snowflake connections.toml file. The file exists but uses the old TOML format:
 
 [DEMO_PRAJAGOPAL_PUBLIC]
-account = "IHB90733"
-user = "prajagopal"
+account = "<Your Snowflake Account>"
+user = "<Your Snowflake Username>"
 # ... other settings
 
 But the app expects the new format with connections.NAME. Fix the connection loading logic to handle both old format (NAME) and new format (connections.NAME) automatically. Also improve error messages to show available connections if the specified one is not found.
