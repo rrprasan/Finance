@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  iceberg-table-creator:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      # Mount your AWS credentials
+      - ~/.aws:/root/.aws:ro
+      # Mount your Snowflake connections
+      - ~/.snowflake:/root/.snowflake:ro
+    environment:
+      - STREAMLIT_SERVER_HEADLESS=true
+      - STREAMLIT_SERVER_ENABLE_CORS=false
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
