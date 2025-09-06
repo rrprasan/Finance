@@ -2,7 +2,7 @@
 ## ```AI_FILTER``` & ```AI_AGG```
 
 # The Challenge
-- ### Analyzing large volumes of unstructured text, like executive transcripts, is a significant challenge. 
+- ### Analyzing large volumes of unstructured text, like executives' event transcripts, is a significant challenge. 
 - ### Traditional SQL queries can't easily identify and summarize nuanced themes like "cash flow discussions." 
 - ### To understand how a company's narrative around cash flow has changed over time, a financial analyst would typically have to:
 
