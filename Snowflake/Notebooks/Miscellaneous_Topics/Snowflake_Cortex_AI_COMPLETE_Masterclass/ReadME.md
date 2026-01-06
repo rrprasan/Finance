@@ -33,22 +33,22 @@ See how AI_COMPLETE can mimic and extend other Cortex functions:
 - Similarity Analysis: Get similarity scores plus semantic explanations.
 
 ### 4. 🎭 Advanced Prompt Engineering
-Role-Based Prompting: Simulate personas (e.g., "Senior Equity Analyst") using System, User, and Assistant roles.
+- Role-Based Prompting: Simulate personas (e.g., "Senior Equity Analyst") using System, User, and Assistant roles.
 
-Multi-Turn Simulation: Create conversational context within a single SQL call.
+- Multi-Turn Simulation: Create conversational context within a single SQL call.
 
-Few-Shot Prompting: Teach the model complex output formats using examples.
+- Few-Shot Prompting: Teach the model complex output formats using examples.
 
 ## 📂 Real-World Use Cases Included
 The notebook includes setup scripts for demo tables (CUSTOMER_REVIEWS, SUPPORT_TICKETS, DOCUMENTS) to practice:
 
-Automated Support Ticket Triage
+- Automated Support Ticket Triage
 
-Equity Research Summarization
+- Equity Research Summarization
 
-Executive Document Summarization
+- Executive Document Summarization
 
-Multi-language Translation Pipelines
+- Multi-language Translation Pipelines
 
 ## 🛠️ Prerequisites
 - A Snowflake Account with Cortex AI enabled.
